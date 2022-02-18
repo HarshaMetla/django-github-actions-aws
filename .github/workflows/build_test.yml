@@ -27,6 +27,7 @@ jobs:
         python manage.py test
   DependencyCheck:
     runs-on: ubuntu-latest
+    needs: test
     name: depecheck_test
     steps:
     - name: Dependency_Check
@@ -47,7 +48,7 @@ jobs:
     
   Nmap:
      name: building nmap image and pushing into repository
-     needs: test
+     needs: DependencyCheck
      runs-on: ubuntu-latest
      steps:
      - uses: actions/checkout@v2
