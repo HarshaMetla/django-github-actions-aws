@@ -33,7 +33,7 @@ jobs:
       uses: dependency-check/Dependency-Check_Action@main
       id: Depcheck
       with:
-          project: 'django_github_actions_aws'
+          project: 'manage.py'
           path: '.'
           format: 'HTML'    
           args: >
@@ -93,6 +93,6 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: django-github-actions-aws
         environment_name: Djangogithubactionsaws-env
-        version_label: 123483
+        version_label: 123487
         region: "ap-south-1"
         deployment_package: deploy.zip
