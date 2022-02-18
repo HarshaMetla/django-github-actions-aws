@@ -33,7 +33,7 @@ jobs:
       uses: dependency-check/Dependency-Check_Action@main
       id: Depcheck
       with:
-          project: 'manage.py'
+          project: 'django_github_actions_aws'
           path: '.'
           format: 'HTML'    
           args: >
