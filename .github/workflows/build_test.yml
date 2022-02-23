@@ -94,6 +94,6 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: Testbean-sampleApplication-1EUL33C7YG68Z
         environment_name: Test-sample-1JCJNCP4OIWS9
-        version_label: 12348464
+        version_label: 12348460
         region: "ap-south-1"
         deployment_package: deploy.zip
