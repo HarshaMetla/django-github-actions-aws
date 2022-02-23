@@ -92,8 +92,8 @@ jobs:
       with:
         aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        application_name: Testbean-sampleApplication-1EUL33C7YG68Z
-        environment_name: Test-sample-1JCJNCP4OIWS9
+        application_name: django-github-actions-aws
+        environment_name: Djangogithubactionsaws-env
         version_label: 12348460
         region: "ap-south-1"
         deployment_package: deploy.zip
