@@ -77,7 +77,7 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}   
   deploy:
-    needs: Sqlmap
+    needs: test
     runs-on: ubuntu-latest
 
     steps:
@@ -94,6 +94,6 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: django-github-actions-aws
         environment_name: Djangogithubactionsaws-env
-        version_label: 12348469
+        version_label: 12348499
         region: "ap-south-1"
         deployment_package: deploy.zip
